@@ -139,7 +139,7 @@ AD_DETAILS_OPEN_LOGIN = (By.XPATH, "//button[@data-testid='login-button']")
 
 @contextmanager
 def chrome(headless: bool = False, proxy: Optional[str] = None) -> Chrome:
-    executable = ChromeDriverManager(log_level=logging.CRITICAL).install()
+    executable = ChromeDriverManager().install()
     service = Service(executable)
 
     options = ChromeOptions()

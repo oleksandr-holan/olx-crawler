@@ -2,13 +2,18 @@
 name = "olx-crawler"
 version = "0.0.0"
 description = "Project description"
-requires-python = "==3.12.5"
-dependencies = [ "ahocorapy~=1.6.1", "click~=8.0.3", "inject~=4.3.1", "selenium~=4.1.0", "tqdm~=4.62.3", "validators~=0.18.2", "webdriver-manager~=3.5.2",]
+requires-python = ">=3.12"
+dependencies = [
+    "ahocorapy~=1.6.2",
+    "click~=8.1.7",
+    "inject~=5.2.1",
+    "selenium~=4.27.1",
+    "tqdm~=4.67.1",
+    "validators~=0.34.0",
+    "webdriver-manager>=4.0.2",
+]
 
 [tool.uv]
-dev-dependencies = [ "bandit", "black", "flake8", "isort", "pre-commit",]
-[[tool.uv.index]]
-name = "pypi"
-url = "https://pypi.org/simple"
+dev-dependencies = ["bandit", "black", "flake8", "isort", "pre-commit"]
 
 [tool.uv.sources]
